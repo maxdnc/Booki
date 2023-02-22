@@ -355,8 +355,10 @@ body {
 .wrapper-details {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 0.25rem;
-  /* padding: 0 0 0.6rem 0.5rem; */
+  flex: 1;
+  padding-left: 1rem;
 }
 
 .wrapper-details-famous {
@@ -389,10 +391,12 @@ body {
   align-items: center;
   gap: 0.125rem;
 }
+
 .fa-star {
   color: var(--blue);
   font-size: 0.75rem;
 }
+
 .greystar {
   color: var(--grey);
 }
