@@ -73,8 +73,6 @@ body {
   --pastel: #deebff;
   --grey: #f2f2f2;
   --black: black;
-  --bigfont: 1.375rem;
-  --normalfont: 1rem;
 }
 
 /* Desktop first */
@@ -222,6 +220,7 @@ body {
 }
 
 /* info */
+
 .circle {
   display: inline-flex;
   justify-content: center;
@@ -485,7 +484,6 @@ footer {
   padding-left: 1rem;
   padding-right: 1rem;
   max-width: 87.5rem;
-  overflow: hidden;
 }
 
 /* tab */
@@ -520,118 +518,13 @@ footer {
 /* mobile */
 
 @media only screen and (max-width: 48rem) {
-  .wrapperbox-accommodation {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .offers {
-    background-color: white;
-  }
-
-  .box-offers {
-    gap: 0.5rem;
-    max-width: none;
-  }
-
-  .accommodations {
-    flex-direction: column-reverse;
-    gap: 2.5rem;
-  }
-
-  .button-afficher {
-    display: none;
-  }
-
-  .wrapperbox-famous {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 3%;
-  }
-
-  .box-famous {
-    max-width: none;
-  }
-
-  .wrapper-box-activity {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-
-  .activity-box {
-    max-width: none;
-  }
-
-  .img-activity {
-    height: 9.875rem;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .nav-bar-footer {
-    flex-direction: column;
-    gap: 2.5rem;
-    margin-left: 2rem;
-  }
-  .filter {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-  }
-  .text-filter {
-    align-self: flex-start;
-  }
-
-  .wrapper-button {
-    justify-content: center;
-    gap: 0.8125rem;
-  }
-
-  .filter-button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.3125rem;
-    width: 10rem;
-    padding: 0.5rem 0;
-    font-size: 0.6875rem;
-  }
-
-  .input-search {
-    max-width: none;
-  }
-  .mobile-search-button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border: 0;
-    color: white;
-    font-weight: 700;
-    font-size: 1.125rem;
-    border-radius: 0 1rem 1rem 0;
-    background-color: var(--blue);
-    padding: 0 1rem;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    transform: translatex(-100%);
-    cursor: pointer;
-  }
-
-  .search-button {
-    display: none;
-  }
+  /* header  */
 
   .nav-bar-header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-block: 3rem;
+    padding-block: 2rem;
     margin-right: 0;
     gap: 3rem;
   }
@@ -658,5 +551,124 @@ footer {
   .link-nav:hover {
     border-top: none;
     border-bottom: 3px solid var(--blue);
+  }
+
+  /* filter  */
+
+  .filter {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  .text-filter {
+    align-self: flex-start;
+  }
+
+  .wrapper-button {
+    justify-content: center;
+    gap: 0.8125rem;
+  }
+
+  .filter-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3125rem;
+    width: 10rem;
+    padding: 0.5rem 0;
+    font-size: 0.6875rem;
+  }
+  /* search  */
+
+  .input-search {
+    max-width: none;
+  }
+  .mobile-search-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    color: white;
+    font-weight: 700;
+    font-size: 1.125rem;
+    border-radius: 0 1rem 1rem 0;
+    background-color: var(--blue);
+    padding: 0 1rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transform: translatex(-100%);
+    cursor: pointer;
+  }
+
+  .search-button {
+    display: none;
+  }
+
+  /* accodomation */
+
+  .wrapperbox-accommodation {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .offers {
+    background-color: white;
+  }
+
+  .box-offers {
+    gap: 0.5rem;
+    max-width: none;
+  }
+
+  .accommodations {
+    flex-direction: column-reverse;
+    gap: 2.5rem;
+  }
+
+  .button-afficher {
+    display: none;
+  }
+
+  /* famous */
+
+  .wrapperbox-famous {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3%;
+  }
+
+  .box-famous {
+    max-width: none;
+  }
+
+  /* activity  */
+
+  .wrapper-box-activity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .activity-box {
+    max-width: none;
+  }
+
+  .img-activity {
+    height: 9.875rem;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* footer */
+
+  .nav-bar-footer {
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-left: 2rem;
   }
 }
