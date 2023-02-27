@@ -1,5 +1,4 @@
 /* reset */
-
 *,
 *::before,
 *::after {
@@ -598,7 +597,7 @@ footer {
     position: absolute;
     top: 0;
     bottom: 0;
-    transform: translatex(-100%);
+    right: 0;
     cursor: pointer;
   }
 
