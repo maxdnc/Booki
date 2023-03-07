@@ -166,7 +166,7 @@ body {
   font-size: 1.125rem;
   border-radius: 0 1rem 1rem 0;
   background-color: var(--blue);
-  padding: 0 1rem;
+  padding: 0 1em;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -201,11 +201,11 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1em;
   border: 2px solid var(--grey);
   background-color: white;
   border-radius: 2rem;
-  padding: 0.5rem 2rem;
+  padding: 0.5em 2em;
   cursor: pointer;
   font-weight: 700;
   font-size: 1.0625rem;
@@ -574,9 +574,9 @@ footer {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    gap: 0.3125rem;
+    gap: 1em;
     width: 10rem;
-    padding: 0.5rem 0;
+    padding: 0.5em 0;
     font-size: 0.6875rem;
   }
   /* search  */
@@ -594,7 +594,7 @@ footer {
     font-size: 1.125rem;
     border-radius: 0 1rem 1rem 0;
     background-color: var(--blue);
-    padding: 0 1rem;
+    padding: 0 1em;
     position: absolute;
     top: 0;
     bottom: 0;
