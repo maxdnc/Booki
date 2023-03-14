@@ -76,6 +76,15 @@ body {
 
 /* Desktop first */
 
+/* block */
+
+.block {
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1440px;
+}
+
 /* header */
 
 .nav-bar-header {
@@ -152,6 +161,7 @@ body {
   background-color: var(--grey);
   border-radius: 1rem 0 0 1rem;
   cursor: pointer;
+  border: none;
 }
 
 .fa-location-dot {
@@ -306,6 +316,17 @@ body {
 
 /* boxes */
 
+.box {
+  overflow: hidden;
+  border-radius: 1.25em;
+  background-color: white;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease-out;
+  border: 5px solid white;
+}
+
 .box-offers {
   display: flex;
   flex-direction: column;
@@ -320,17 +341,6 @@ body {
   max-width: 21.4375rem;
   max-height: 9rem;
   gap: 4%;
-}
-
-.box {
-  overflow: hidden;
-  border-radius: 1.25rem;
-  background-color: white;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  text-decoration: none;
-  transition: transform 0.2s ease-out;
-  border: 5px solid white;
 }
 
 .box:hover {
@@ -475,15 +485,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-}
-
-/* block */
-
-.block {
-  margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  max-width: 87.5rem;
 }
 
 /* tab */

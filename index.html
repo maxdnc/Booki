@@ -12,14 +12,19 @@
     <title>Booki</title>
   </head>
   <body>
+    <!-- header  -->
     <div class="block">
       <header>
         <nav class="nav-bar-header">
-          <img
-            class="logo-booki"
-            src="./images/logo/Booki.png"
-            alt="logo bleu booki"
-          />
+          <!-- logo booki linked -->
+          <a href="#">
+            <img
+              class="logo-booki"
+              src="./images/logo/Booki.png"
+              alt="logo bleu booki"
+            />
+          </a>
+          <!-- nav bar link  -->
           <ul class="header-link">
             <li class="wrap-link">
               <a class="link-nav" href="#accommodations">Hébergements</a>
@@ -29,57 +34,75 @@
             </li>
           </ul>
         </nav>
+
         <h1 class="main-title">
           Trouvez votre hébergement pour des vacances de rêve
         </h1>
         <p class="basic-text">En plein centre-ville ou en pleine nature</p>
       </header>
+
       <div class="search-filter">
+        <!-- form bar de rechercher  -->
         <form>
           <div class="wrapper-search">
-            <a class="wrapper-location">
+            <button class="wrapper-location">
               <i class="fa-solid fa-location-dot"></i>
-            </a>
+            </button>
             <input
               class="input-search"
               type="text"
               placeholder="Marseille, France"
             />
             <button class="search-button">Recherche</button>
-            <button class="mobile-search-button">
-              <i class="fa-solid fa-magnifying-glass"></i>
+            <button class="mobile-search-button" aria-label="Recherche">
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
             </button>
           </div>
         </form>
+        <!-- boutton filtre  -->
         <div class="filter">
           <p class="text-filter">Filtres</p>
           <div class="wrapper-button">
             <button class="filter-button">
-              <i class="fa-solid fa-money-bill-wave icone-filter"></i>Économique
+              <i
+                class="fa-solid fa-money-bill-wave icone-filter"
+                aria-hidden="true"
+              ></i
+              >Économique
             </button>
             <button class="filter-button">
-              <i class="fa-solid fa-person icone-filter"></i>Familial
+              <i class="fa-solid fa-person icone-filter" aria-hidden="true"></i
+              >Familial
             </button>
             <button class="filter-button">
-              <i class="fa-solid fa-heart icone-filter"></i>Romantique
+              <i class="fa-solid fa-heart icone-filter" aria-hidden="true"></i
+              >Romantique
             </button>
             <button class="filter-button">
-              <i class="fa-solid fa-dog icone-filter"></i>Animaux autorisés
+              <i class="fa-solid fa-dog icone-filter" aria-hidden="true"></i
+              >Animaux autorisés
             </button>
           </div>
         </div>
       </div>
+
+      <!-- information  -->
+
       <div class="information">
         <div class="circle">
           <i class="fa-solid fa-info"></i>
         </div>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
+
       <main>
+        <!-- accommodations -->
+
         <div id="accommodations" class="accommodations">
           <section class="offers">
             <h2 class="title-acco">Hébergements à Marseille</h2>
             <div class="wrapperbox-accommodation">
+              <!-- hotel 1  -->
               <a href="#" class="box box-offers">
                 <div class="wrapper-img-offer">
                   <img
@@ -101,6 +124,7 @@
                   </div>
                 </div>
               </a>
+              <!-- hotel 2 -->
               <a href="#" class="box box-offers">
                 <div class="wrapper-img-offer">
                   <img
@@ -122,6 +146,8 @@
                   </div>
                 </div>
               </a>
+
+              <!-- hotel 3 -->
               <a href="#" class="box box-offers">
                 <div class="wrapper-img-offer">
                   <img
@@ -143,6 +169,9 @@
                   </div>
                 </div>
               </a>
+
+              <!-- hotel 4 -->
+
               <a href="#" class="box box-offers">
                 <div class="wrapper-img-offer">
                   <img
@@ -164,6 +193,8 @@
                   </div>
                 </div>
               </a>
+
+              <!-- hotel 5 -->
               <a href="#" class="box box-offers">
                 <div class="wrapper-img-offer">
                   <img
@@ -185,6 +216,8 @@
                   </div>
                 </div>
               </a>
+
+              <!-- hotel 6 -->
               <a href="#" class="box box-offers">
                 <div class="wrapper-img-offer">
                   <img
@@ -209,7 +242,7 @@
             </div>
             <button class="button-afficher">Afficher plus</button>
           </section>
-
+          <!-- most famous  -->
           <aside class="famous">
             <div class="wrap-title-famous">
               <h2 class="title-acco">Les plus populaires</h2>
@@ -217,6 +250,7 @@
             </div>
 
             <div class="wrapperbox-famous">
+              <!-- hotel 1 most famous -->
               <a href="#" class="box box-famous">
                 <div class="wrapper-img-famous">
                   <img
@@ -239,6 +273,9 @@
                   </div>
                 </div>
               </a>
+
+              <!-- hotel 2 most famous -->
+
               <a href="#" class="box box-famous">
                 <div class="wrapper-img-famous">
                   <img
@@ -263,6 +300,8 @@
                   </div>
                 </div>
               </a>
+
+              <!-- hotel 3 most famous -->
               <a href="#" class="box box-famous">
                 <div class="wrapper-img-famous">
                   <img
@@ -292,6 +331,7 @@
         <section id="activity" class="activity">
           <h2 class="main-title-acctivity">Activités à Marseille</h2>
           <div class="wrapper-box-activity">
+            <!-- activity 1 -->
             <a href="#" class="box activity-box">
               <div class="wrapper-img">
                 <img
@@ -302,6 +342,8 @@
               </div>
               <h3 class="title-activity">Vieux-Port</h3>
             </a>
+
+            <!-- activity 2 -->
             <a href="#" class="box activity-box">
               <div class="wrapper-img">
                 <img
@@ -312,6 +354,7 @@
               </div>
               <h3 class="title-activity">Fort de Pomègues</h3>
             </a>
+            <!-- activity 3 -->
             <a href="#" class="box activity-box">
               <div class="wrapper-img">
                 <img
@@ -322,6 +365,8 @@
               </div>
               <h3 class="title-activity">Parc national des Calanques</h3>
             </a>
+
+            <!-- activity 4 -->
             <a href="#" class="box activity-box">
               <div class="wrapper-img">
                 <img
@@ -335,7 +380,7 @@
           </div>
         </section>
       </main>
-
+      <!-- footer  -->
       <footer>
         <nav class="nav-bar-footer">
           <ul class="liste-footer">
