@@ -295,13 +295,12 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
+/* GRID BOITE HEBERGEMENT  */
 .wrapperbox-accommodation {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
   gap: 3%;
-  flex: 1;
 }
 
 .wrapperbox-famous {
@@ -309,7 +308,6 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   gap: 5%;
-  flex: 1;
 }
 
 /* boxes */
