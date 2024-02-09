@@ -60,9 +60,9 @@ a {
 }
 
 /* font */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* variable declaration */
@@ -72,6 +72,7 @@ body {
   --pastel: #deebff;
   --grey: #f2f2f2;
   --black: black;
+  --border: #d9d9d9;
 }
 
 /* Desktop first */
@@ -79,8 +80,8 @@ body {
 /* block */
 
 .block {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 /* header */
@@ -88,7 +89,7 @@ body {
 .nav-bar-header {
   display: flex;
   align-items: center;
-  padding-block: 3rem;
+  padding-block: 1.875rem;
   margin-right: 1.6875rem;
 }
 .logo-booki {
@@ -105,7 +106,7 @@ body {
 
 .link-nav {
   color: var(--black);
-  padding-top: 3rem;
+  padding-top: 1.875rem;
 }
 
 .link-nav:hover {
@@ -197,7 +198,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 10px;
 }
 
 .text-filter {
@@ -210,7 +211,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1em;
-  border: 2px solid var(--grey);
+  border: 2px solid var(--border);
   background-color: white;
   border-radius: 2rem;
   padding: 0.5em 2em;
@@ -257,7 +258,10 @@ body {
   font-weight: 700;
   cursor: pointer;
   max-width: fit-content;
+  font-size: 1.125rem;
 }
+
+/* chevauchement montrer le media query  */
 
 .accommodations {
   display: flex;
@@ -295,12 +299,14 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 /* GRID BOITE HEBERGEMENT  */
 .wrapperbox-accommodation {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
   gap: 3%;
+  row-gap: 30px;
 }
 
 .wrapperbox-famous {
@@ -329,13 +335,14 @@ body {
   justify-content: space-between;
   gap: 2%;
   max-width: 15.375rem;
+  padding-bottom: 6px;
 }
 
 .box-famous {
   display: flex;
   flex-direction: row;
   max-width: 21.4375rem;
-  max-height: 9rem;
+
   gap: 4%;
 }
 
@@ -373,8 +380,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-  justify-content: space-around;
+  justify-content: space-between;
   flex: 1;
+  padding-right: 0.5rem;
 }
 
 .wrap-description {
@@ -386,6 +394,7 @@ body {
   font-size: 1rem;
   line-height: 1.1875rem;
   color: black;
+  margin-top: 10px;
 }
 
 .night-price {
@@ -419,6 +428,9 @@ body {
   flex-direction: column;
   gap: 1.5rem;
   margin-top: 3.75rem;
+
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .main-title-acctivity {
@@ -431,7 +443,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 5%;
+  gap: 3%;
 }
 
 .activity-box {
@@ -459,14 +471,13 @@ body {
 
 footer {
   background-color: var(--grey);
-  padding-top: 2.8125rem;
+  padding-top: 1.875rem;
   padding-bottom: 3.625rem;
   margin-top: 3.8125rem;
 }
 
 .title-footer {
   font-size: 1.125rem;
-  margin-bottom: 1.25rem;
 }
 
 .link-footer {
@@ -485,11 +496,17 @@ footer {
 
 /* tab */
 
-@media only screen and (max-width: 62rem) {
+@media only screen and (max-width: 1024px) {
+  .filter {
+    flex-direction: column;
+    align-items: start;
+  }
+
   .accommodations {
     flex-direction: column;
     gap: 2.5rem;
   }
+
   .wrapperbox-famous {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -498,24 +515,28 @@ footer {
     flex: 1;
   }
 
-  .title-hotel {
-    font-size: 0.875rem;
-  }
-
-  .night-price {
-    font-size: 0.8125rem;
-  }
-
   .img-activity {
-    height: 13.1875rem;
+    height: 200px;
     object-fit: cover;
   }
 }
 
 /* mobile */
 
-@media only screen and (max-width: 48rem) {
+@media only screen and (max-width: 768px) {
+  .block {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   /* header  */
+
+  .main-title {
+    padding: 0 20px;
+  }
+  .basic-text {
+    padding: 0 20px;
+  }
 
   .nav-bar-header {
     display: flex;
@@ -557,26 +578,45 @@ footer {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
+    padding: 0 20px;
   }
   .text-filter {
     align-self: flex-start;
   }
 
   .wrapper-button {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-content: center;
-    gap: 0.8125rem;
+    column-gap: 10px;
+    row-gap: 20px;
   }
 
   .filter-button {
     display: inline-flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 1em;
-    width: 10rem;
-    padding: 0.5em 0;
-    font-size: 0.6875rem;
+    height: 50px;
+    width: 162.5px;
+    font-size: 0.875rem;
+    padding: 0.5rem 1.1875rem;
+  }
+
+  .icone-filter {
+    font-size: 1.125rem;
+  }
+
+  /* info  */
+  .information {
+    padding: 0 1rem;
   }
   /* search  */
+
+  .wrapper-search {
+    padding: 0 20px;
+  }
 
   .input-search {
     max-width: none;
@@ -589,13 +629,14 @@ footer {
     color: white;
     font-weight: 700;
     font-size: 1.125rem;
-    border-radius: 0 1rem 1rem 0;
+    border-radius: 1rem;
     background-color: var(--blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 0 1em;
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 0;
+    right: 20px;
     cursor: pointer;
   }
 
@@ -608,7 +649,15 @@ footer {
   .wrapperbox-accommodation {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 15px;
+  }
+
+  .wrapper-details {
+    gap: 0.5rem;
+  }
+
+  .title-hotel {
+    margin-top: 0;
   }
 
   .offers {
@@ -618,18 +667,19 @@ footer {
   .box-offers {
     gap: 0.5rem;
     max-width: none;
+    padding-bottom: 0;
   }
 
   .accommodations {
     flex-direction: column-reverse;
-    gap: 2.5rem;
-  }
-
-  .button-afficher {
-    display: none;
+    gap: 0;
   }
 
   /* famous */
+
+  .famous {
+    border-radius: 0;
+  }
 
   .wrapperbox-famous {
     display: grid;
@@ -640,15 +690,30 @@ footer {
 
   .box-famous {
     max-width: none;
+    max-height: 146px;
+  }
+
+  .wrapper-details-famous {
+    justify-content: space-between;
+    margin-top: 6px;
   }
 
   /* activity  */
+
+  .activity {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main-title-acctivity {
+    margin-left: 0;
+  }
 
   .wrapper-box-activity {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 15px;
   }
 
   .activity-box {
@@ -670,7 +735,16 @@ footer {
   }
 }
 
-@media only screen and (min-width: 90rem) {
+@media only screen and (max-width: 368px) {
+  .wrapper-button {
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
   body {
     max-width: 90rem;
     margin: 0 auto;
