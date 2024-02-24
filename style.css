@@ -739,7 +739,7 @@ footer {
 @media only screen and (max-width: 368px) {
   .wrapper-button {
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
   }
